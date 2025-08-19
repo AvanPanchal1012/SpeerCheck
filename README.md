@@ -1,29 +1,34 @@
 # SpeerCheck – Live Interview Scheduler
 
-This is a desktop-first React + TypeScript + Vite project to schedule interviews by matching candidate availability with engineers.
+A desktop-first React + TypeScript + Vite project to schedule interviews by matching candidate availability with engineers.
 
-## Quick setup
+---
 
-1. Install dependencies:
+## Features
 
-```bash
+- Weekly calendar (Mon–Fri, 9 AM–6 PM, 30-min slots)
+- Candidate availability selection
+- Engineer availability display
+- Overlap calculation for scheduling
+- Schedule interviews with confirmation modal
+- Filter by engineer
+- Slot locking after scheduling
+- Duration selection (15, 30, 60 minutes)
+- Unit tests for availability logic
+
+---
+
+## Local Setup
+
+1. Clone the repo:
+
+git clone <repo-url>
+cd speercheck
+
+2. Install the dependencies:
+
 npm install
-```
 
-2. Start dev server:
+3. run project using command:
 
-```bash
 npm run dev
-```
-
-3. Run tests:
-
-```bash
-npm run test
-```
-
-## Notes
-
-- Tailwind is pre-configured.
-- Uses JSONPlaceholder to fetch demo candidates (can be edited).
-- Booking is session-local (stored in React state).
